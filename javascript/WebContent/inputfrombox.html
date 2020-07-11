@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function fun()
+{
+var rb=document.getElementById("rb");
+var rb1=document.getElementById("rb1");
+
+if(rb.checked==true)
+	alert("the user selected"+rb.value);
+else if(rb1.checked==true)
+	alert("the user selected"+rb1.value);
+else
+	alert("no language selected");
+}
+</script>
+</head>
+<body>
+<input type="radio" name="r1" id="rb" value="java">java</input><br>
+<input type="radio" name="r1" id="rb1" value="javascript">javascript </input><br>
+<button onclick="fun()">Click me</button>
+</body>
+</html>

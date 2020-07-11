@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<script type="text/javascript">
+function fun(){
+	var clas=document.getElementsByClassName("myclass");
+	for(var i=0;i<clas.length;i++)
+	{
+		clas[i].style.color="red";
+	}
+}
+
+</script>
+<body>
+<p id="idd" class="myclass">This is a paragraph tag</p>
+<p>This is a paragraph tag</p>
+<p class="myclass">This is a paragraph tag</p>
+<p>This is a paragraph tag</p>
+<p class="myclass">This is a paragraph tag</p>
+<button onclick=fun()>click me</button>
+
+</body>
+</html>
